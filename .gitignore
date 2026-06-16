@@ -1,0 +1,69 @@
+# .gitignore for EComExtract
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*~
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Node.js
+node_modules/
+dist/
+build/
+.next/
+out/
+.cache/
+.nyc_output/
+coverage/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+pip-wheel-metadata/
+.pytest_cache/
+venv/
+env/
+.envrc
+
+# IDEs & editors
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+
+# Java / JVM
+target/
+*.class
+*.jar
+
+# Databases / runtime files
+*.sqlite3
+*.db
+tmp/
+temp/
+
+# Docker
+docker-compose.override.yml
+
+# Misc
+coverage/
