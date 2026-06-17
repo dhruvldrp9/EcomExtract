@@ -17,6 +17,9 @@ tools:
   - testRunner
   - githubRepo
   - usages
+invocation: automatic
+default: true
+finalized_at: '2026-06-16'
 ---
 
 You are a **Principal Engineer** with 15+ years across distributed systems,

@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecomextract"
+version = "0.1.0"
+description = "Competitor pricing and inventory pipeline"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "playwright>=1.45,<2",
+  "pydantic>=2.8,<3",
+  "requests>=2.32,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<9",
+  "pytest-cov>=5,<6",
+  "ruff>=0.6,<1",
+]
+
+[project.scripts]
+ecomextract = "ecomextract.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

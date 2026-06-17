@@ -61,6 +61,7 @@ target/
 *.db
 tmp/
 temp/
+data/scraped/
 
 # Docker
 docker-compose.override.yml
